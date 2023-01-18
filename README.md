@@ -1,6 +1,6 @@
 x=float(input("enter your num1="))
-y=float(input("enter your num2="))
 i=input("enter the operator :")
+y=float(input("enter your num2="))
 if i=="+":
     sumition= x+y
     print("result= ",sumition)
@@ -29,4 +29,9 @@ else :
                               reminder=x//y
                               print("result= ",  reminder)
                           else:
-                              print("CAN'T SOLVE IT")
+                              def factorial(x):
+			           if x>0 and i =="!":
+				       return x*factorial(x-1)
+				   else:
+				       return 1
+print(factorial(x))
